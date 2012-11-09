@@ -3,16 +3,13 @@
 ;; TODO:
 ;; enable electric parens (or similar)
 ;; use load-library for most things
-;; use the new official color theme mechanisms
 ;; Trash (most of) my saved major modes; get Racket/Scheme working
-;; Move custom code to the "correct" place (.elisp? .emacs.d?)
 ;; Write an rsync script to deploy updates
-;; aliases (e.g. qrr)
 ;; Think about using column-marker mode for code (with a light gray background)
 ;; indentation: spaces only (with comments to enable other modes?)
 
 ;; TODO: put load path for elisp here
-;(add-to-list 'load-path "~/.elisp")
+;(add-to-list 'load-path "~/.emacs.d/elisp")
 
 ;; Sensible defaults
 (setq inhibit-startup-message t)
@@ -37,6 +34,10 @@
 
 ;; Color theme
 (load-theme 'schu t) ; don't prompt to ask if theme is "safe"
+
+;; Major modes
+(setq auto-mode-alist
+      (append '(("\\.rkt$" . scheme-mode)) auto-mode-alist))
 
 
 
