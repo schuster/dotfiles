@@ -20,6 +20,8 @@
 (setq require-final-newline 'ask)
 (setq make-backup-files nil)
 (setq-default fill-column 80)
+(column-number-mode 1)
+(global-linum-mode 1)
 
 ;; Indentation
 (setq-default indent-tabs-mode nil)
