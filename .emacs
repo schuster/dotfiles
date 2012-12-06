@@ -21,6 +21,9 @@
 (setq make-backup-files nil)
 (setq-default fill-column 80)
 
+;; Indentation
+(setq-default indent-tabs-mode nil)
+
 ;; Key bindings
 (global-set-key "\C-x\C-m" 'execute-extended-command)
 (global-set-key "\C-w" 'backward-kill-word)
