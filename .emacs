@@ -47,6 +47,10 @@
 ;; Quack mode for Racket
 (require 'quack)
 
+;; ParEdit
+(autoload 'paredit-mode "paredit"
+  "Minor mode for pseudo-structurally editing Lisp code." t)
+
 ;; -----------------------------------------------------------------------------
 
 ;(global-font-lock-mode t)
