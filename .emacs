@@ -44,7 +44,8 @@
 (setq auto-mode-alist
       (append '(("\\.rkt$" . scheme-mode)) auto-mode-alist))
 
-
+;; Quack mode for Racket
+(require 'quack)
 
 ;; -----------------------------------------------------------------------------
 
