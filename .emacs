@@ -7,8 +7,7 @@
 ;; Think about using column-marker mode for code (with a light gray background)
 ;; indentation: spaces only (with comments to enable other modes?)
 
-;; TODO: put load path for elisp here
-;(add-to-list 'load-path "~/.emacs.d/elisp")
+(add-to-list 'load-path "~/.emacs.d/elisp")
 
 ;; Sensible defaults
 (setq inhibit-startup-message t)
