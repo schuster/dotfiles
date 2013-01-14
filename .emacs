@@ -22,7 +22,7 @@
 (global-linum-mode 1)
 
 ;; Personal preferences
-(setq show-trailing-whitespace t)
+(setq-default show-trailing-whitespace t)
 
 ;; Indentation
 (setq-default indent-tabs-mode nil)
