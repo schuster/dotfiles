@@ -6,6 +6,7 @@
 ;; Write an rsync script to deploy updates
 ;; Think about using column-marker mode for code (with a light gray background)
 ;; indentation: spaces only (with comments to enable other modes?)
+;; get custom-commands file to load (for things like renaming current buffer and file simultaneously)
 
 ;; TODO: put load path for elisp here
 ;(add-to-list 'load-path "~/.emacs.d/elisp")
@@ -23,7 +24,7 @@
 (global-linum-mode 1)
 
 ;; Personal preferences
-(setq show-trailing-whitespace t)
+(setq-default show-trailing-whitespace t)
 
 ;; Indentation
 (setq-default indent-tabs-mode nil)
