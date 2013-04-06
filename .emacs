@@ -6,6 +6,7 @@
 ;; Write an rsync script to deploy updates
 ;; Think about using column-marker mode for code (with a light gray background)
 ;; indentation: spaces only (with comments to enable other modes?)
+;; get custom-commands file to load (for things like renaming current buffer and file simultaneously)
 
 (add-to-list 'load-path "~/.emacs.d/elisp")
 
