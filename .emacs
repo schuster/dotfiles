@@ -11,6 +11,10 @@
 ;; TODO: put load path for elisp here
 ;(add-to-list 'load-path "~/.emacs.d/elisp")
 
+;; Package setup
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
 ;; Sensible defaults
 (setq inhibit-startup-message t)
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
