@@ -8,8 +8,7 @@
 ;; indentation: spaces only (with comments to enable other modes?)
 ;; get custom-commands file to load (for things like renaming current buffer and file simultaneously)
 
-;; TODO: put load path for elisp here
-;(add-to-list 'load-path "~/.emacs.d/elisp")
+(add-to-list 'load-path "~/.emacs.d/elisp")
 
 ;; Package setup
 (add-to-list 'package-archives
