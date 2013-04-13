@@ -2,7 +2,6 @@
 ;;;; Jonathan Schuster's .emacs file
 
 ;; TODO:
-;; use load-library for most things
 ;; indentation: spaces only (with comments to enable other modes?)
 ;; get custom-commands file to load (for things like renaming current buffer and file simultaneously)
 
@@ -30,8 +29,6 @@
 
 ;; Indentation
 (setq-default indent-tabs-mode nil)
-;(setq tab-width 2)
-;(setq c-basic-offset tab-width) ; c-basic-offset should always match tab-width
 
 ;; Key bindings
 (global-set-key "\C-x\C-m" 'execute-extended-command)
