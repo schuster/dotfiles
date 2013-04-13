@@ -1,10 +1,6 @@
 ;; -*- mode: Emacs-Lisp -*-
 ;;;; Jonathan Schuster's .emacs file
 
-;; TODO:
-;; indentation: spaces only (with comments to enable other modes?)
-;; get custom-commands file to load (for things like renaming current buffer and file simultaneously)
-
 (add-to-list 'load-path "~/.emacs.d/elisp")
 
 ;; Package setup
@@ -38,18 +34,9 @@
 ;; Mac key behaviors
 (setq mac-command-modifier 'meta)
 
-;; Command aliases
-(defalias 'qrr 'query-replace-regexp)
-
 ;; Color theme
 (load-theme 'schu t) ; don't prompt to ask if theme is "safe"
 
-;; Major modes
-(add-to-list 'auto-mode-alist '("\\.rkt$" . scheme-mode))
-
-;; Quack mode for Racket
-(require 'quack)
-
-;; ParEdit
-(autoload 'paredit-mode "paredit"
-  "Minor mode for pseudo-structurally editing Lisp code." t)
+;; Scripts for custom commands, modes, etc.
+(load-library "custom-commands")
+(load-library "mode-setup")
