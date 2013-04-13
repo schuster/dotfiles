@@ -1,10 +1,8 @@
+;; -*- mode: Emacs-Lisp -*-
 ;;;; Jonathan Schuster's .emacs file
 
 ;; TODO:
-;; enable electric parens (or similar)
 ;; use load-library for most things
-;; Write an rsync script to deploy updates
-;; Think about using column-marker mode for code (with a light gray background)
 ;; indentation: spaces only (with comments to enable other modes?)
 ;; get custom-commands file to load (for things like renaming current buffer and file simultaneously)
 
@@ -50,8 +48,7 @@
 (load-theme 'schu t) ; don't prompt to ask if theme is "safe"
 
 ;; Major modes
-(setq auto-mode-alist
-      (append '(("\\.rkt$" . scheme-mode)) auto-mode-alist))
+(add-to-list auto-mode-alist '("\\.rkt$" . scheme-mode))
 
 ;; Quack mode for Racket
 (require 'quack)
