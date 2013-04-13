@@ -1,5 +1,5 @@
 #!/bin/sh
 
 BASEDIR=`dirname $0`
-rsync -v $BASEDIR/dot-emacs ~/.emacs
-rsync -rv $BASEDIR/elisp ~/.emacs.d
+rsync $BASEDIR/dot-emacs ~/.emacs
+rsync -r $BASEDIR/elisp ~/.emacs.d
