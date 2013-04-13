@@ -45,7 +45,7 @@
 (load-theme 'schu t) ; don't prompt to ask if theme is "safe"
 
 ;; Major modes
-(add-to-list auto-mode-alist '("\\.rkt$" . scheme-mode))
+(add-to-list 'auto-mode-alist '("\\.rkt$" . scheme-mode))
 
 ;; Quack mode for Racket
 (require 'quack)
