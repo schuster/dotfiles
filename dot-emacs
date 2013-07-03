@@ -23,6 +23,7 @@
 
 ;; Personal preferences
 (setq-default show-trailing-whitespace t)
+(setq-default fill-column 102)
 
 ;; Indentation
 (setq-default indent-tabs-mode nil)
