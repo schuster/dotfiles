@@ -42,3 +42,9 @@
 ;; Scripts for custom commands, modes, etc.
 (load-library "custom-commands")
 (load-library "mode-setup")
+
+;; Register the Redex input method
+(register-input-method
+ "redex" "UTF-8" 'quail-use-package
+ "\\" "LaTeX-like input method for many characters."
+ "~/.emacs.d/elisp/latin-redex")
