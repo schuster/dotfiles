@@ -41,7 +41,7 @@
 ;; Scripts for custom commands, modes, etc.
 (load-library "custom-commands")
 (load-library "mode-setup")
-(load-library "programming-mode-customizations")
+(load-library "mode-customizations")
 
 ;; Register the Redex input method
 (register-input-method
