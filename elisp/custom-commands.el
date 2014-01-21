@@ -16,3 +16,4 @@
 
 ;; Command aliases
 (defalias 'qrr 'query-replace-regexp)
+(defalias 'ms 'magit-status)
