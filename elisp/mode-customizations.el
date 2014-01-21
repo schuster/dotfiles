@@ -8,3 +8,8 @@
 ;; Paredit for all S-expression-based programming modes
 (add-hook 'emacs-lisp-mode-hook 'paredit-mode)
 (add-hook 'scheme-mode-hook 'paredit-mode)
+
+;; Fix magit commit message editor, as seen here: http://stackoverflow.com/a/19265280/21957
+(if (equal 'darwin system-type)
+    (set-variable 'magit-emacsclient-executable "/usr/local/bin/emacsclient"))
+
