@@ -1,6 +1,6 @@
 ;; Conventional max line length in Racket is 102 columns
 (add-hook 'scheme-mode-hook (lambda () (column-marker-1 102)))
-(add-hook 'scheme-mode-hook (lambda () (setq-default fill-column 102)))
+(add-hook 'scheme-mode-hook (lambda () (setq fill-column 102)))
 
 ;; Show a column marker in markdown mode
 (add-hook 'markdown-mode-hook (lambda () (column-marker-1 80)))
