@@ -8,4 +8,5 @@
 ;; File extensions/major mode bindings
 (add-to-list 'auto-mode-alist '("\\.rkt$" . scheme-mode))
 (add-to-list 'auto-mode-alist '("\\.transit$" . scheme-mode))
+(add-to-list 'auto-mode-alist '("\\.ttest$" . scheme-mode))
 (add-to-list 'auto-mode-alist '("\\.k$" . k3-mode))
