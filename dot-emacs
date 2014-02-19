@@ -48,3 +48,6 @@
  "redex" "UTF-8" 'quail-use-package
  "\\" "LaTeX-like input method for many characters."
  "~/.emacs.d/elisp/latin-redex")
+
+;; Default start directory (for some reason it's "/" by default on OS X)
+(setq default-directory "~/")
