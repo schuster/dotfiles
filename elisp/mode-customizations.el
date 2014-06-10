@@ -14,3 +14,7 @@
 (if (equal 'darwin system-type)
     (set-variable 'magit-emacsclient-executable "/usr/local/bin/emacsclient"))
 
+;; AUCTeX settings
+;; AUCTeX quickstart says to enable these in order to support many other LaTeX packages
+(setq TeX-auto-save t)
+(setq TeX-parse-self t)
