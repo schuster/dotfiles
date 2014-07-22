@@ -22,3 +22,15 @@
 ;; AUCTeX quickstart says to enable these in order to support many other LaTeX packages
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)
+
+;; Highlight comment annotations in all programming modes (via
+;; http://emacsredux.com/blog/2013/07/24/highlight-comment-annotations/)
+(defun font-lock-comment-annotations ()
+  "Highlight a bunch of well known comment annotations.
+
+This functions should be added to the hooks of major modes for programming."
+  (font-lock-add-keywords
+   nil '(("\\<\\(FIX\\(ME\\)?\\|TODO\\|OPTIMIZE\\|HACK\\|REFACTOR\\):"
+          1 font-lock-warning-face t))))
+
+(add-hook 'prog-mode-hook 'font-lock-comment-annotations)
