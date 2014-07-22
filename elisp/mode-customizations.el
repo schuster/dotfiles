@@ -2,6 +2,10 @@
 (add-hook 'racket-mode-hook (lambda () (column-marker-1 102)))
 (add-hook 'racket-mode-hook (lambda () (setq fill-column 102)))
 
+;; Conventional max line length in Rust is 102 columns
+(add-hook 'rust-mode-hook (lambda () (column-marker-1 99)))
+(add-hook 'rust-mode-hook (lambda () (setq fill-column 99)))
+
 ;; Show a column marker in markdown mode
 (add-hook 'markdown-mode-hook (lambda () (column-marker-1 80)))
 
