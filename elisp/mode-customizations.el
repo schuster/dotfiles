@@ -34,3 +34,5 @@ This functions should be added to the hooks of major modes for programming."
           1 font-lock-warning-face t))))
 
 (add-hook 'prog-mode-hook 'font-lock-comment-annotations)
+
+(add-hook 'text-mode-hook 'flyspell-mode)
