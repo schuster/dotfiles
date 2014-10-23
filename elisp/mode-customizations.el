@@ -6,8 +6,9 @@
 (add-hook 'rust-mode-hook (lambda () (column-marker-1 99)))
 (add-hook 'rust-mode-hook (lambda () (setq fill-column 99)))
 
-;; Show a column marker in markdown mode
+;; Show a column marker in markdown mode and disable electric indent
 (add-hook 'markdown-mode-hook (lambda () (column-marker-1 80)))
+(add-hook 'markdown-mode-hook (lambda () (electric-indent-local-mode -1)))
 
 ;; Paredit for all S-expression-based programming modes
 (add-hook 'emacs-lisp-mode-hook 'paredit-mode)
