@@ -10,3 +10,7 @@
 (add-to-list 'auto-mode-alist '("\\.ls$" . racket-mode))
 (add-to-list 'auto-mode-alist '("\\.ttest$" . racket-mode))
 (add-to-list 'auto-mode-alist '("\\.k$" . k3-mode))
+
+;; Set up ispell for OSX
+(if (eq system-type 'darwin)
+  (setq ispell-program-name "/usr/local/bin/aspell"))
