@@ -1,0 +1,8 @@
+# LaTeX generated output
+*.aux
+*.bbl
+*.blg
+*.log
+
+# Racket compiled files
+compiled/

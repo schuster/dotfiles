@@ -1,0 +1,10 @@
+[extensions]
+pager =
+
+[pager]
+attend = annotate, cat, diff, export, glog, help, log, qdiff
+ignore = version, update, serve, record
+
+[ui]
+ignore = ~/.hgignore
+username = Jonathan Schuster <jonathan.p.schuster@gmail.com>
