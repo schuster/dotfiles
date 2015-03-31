@@ -1,0 +1,2 @@
+# prevents sudo from timing out when pacaur is in the building process
+sudoloop=true
