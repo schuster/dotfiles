@@ -1,0 +1,9 @@
+OPTIONS=!autopickup,disclose:i+ a+ v+ g+ c+
+OPTIONS=dogname:Spartacus,catname:Hector,fruit:nectarine,pettype:dog
+OPTIONS=showexp,showscore,color
+OPTIONS=scores:5 top/own
+OPTIONS=time
+OPTIONS=boulder:0
+OPTIONS=DECgraphics
+OPTIONS=pickup_burden:unencumbered
+OPTIONS=hilite_pet

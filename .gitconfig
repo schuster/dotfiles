@@ -1,0 +1,17 @@
+[user]
+	name = Jonathan Schuster
+	email = jonathan.p.schuster@gmail.com
+[alias]
+	st = status -s
+	ci = commit
+        br = branch
+[core]
+        excludesfile = /Users/schu/.gitignore_global
+[merge]
+        conflictstyle = diff3
+        tool = diffmerge
+[mergetool "diffmerge"]
+        cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
+        trustExitCode = false
+[push]
+	default = simple
