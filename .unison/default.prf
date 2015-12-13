@@ -1,0 +1,6 @@
+# Unison preferences file
+
+logfile = /home/schu/.unison.log
+merge = Name *.{txt,md} -> meld -o NEW CURRENT1 CURRENT2
+
+ignore = Name {*.aux,*.log,*.bbl,*.blg}

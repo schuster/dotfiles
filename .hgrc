@@ -3,7 +3,7 @@ pager =
 
 [pager]
 attend = annotate, cat, diff, export, glog, help, log, qdiff
-ignore = version, update, serve, record
+ignore = version, help, update, serve, record
 
 [ui]
 ignore = ~/.hgignore

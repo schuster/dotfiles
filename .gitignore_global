@@ -1,8 +1,11 @@
-# LaTeX generated output
+# LaTeX (and auctex) generated output
 *.aux
 *.bbl
 *.blg
+*.fdb_latexmk
+*.fls
 *.log
+auto/
 
 # Racket compiled files
 compiled/

@@ -39,9 +39,12 @@
 (setq mac-command-modifier 'meta)
 
 ;; Color theme
-(load-theme 'solarized-dark t) ; don't prompt to ask if theme is "safe"
+(set-frame-parameter nil 'background-mode 'dark)
+(when window-system
+  (load-theme 'solarized t)) ; don't prompt to ask if theme is "safe"
 
 ;; Scripts for custom commands, modes, etc.
+(load-library "markdown-mode")
 (load-library "custom-commands")
 (load-library "mode-setup")
 (load-library "mode-customizations")

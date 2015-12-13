@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+TryExec=xfce4-panel
+Exec=xfce4-panel
+Hidden=false
+Name=Xfce Panel

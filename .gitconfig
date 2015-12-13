@@ -3,15 +3,12 @@
 	email = jonathan.p.schuster@gmail.com
 [alias]
 	st = status -s
+	co = checkout
 	ci = commit
         br = branch
 [core]
-        excludesfile = /Users/schu/.gitignore_global
-[merge]
-        conflictstyle = diff3
-        tool = diffmerge
-[mergetool "diffmerge"]
-        cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
-        trustExitCode = false
+	excludesfile = /home/schu/.gitignore_global
+	editor = emacs
 [push]
+	# Can remove this line once git 2.0 changes the default
 	default = simple

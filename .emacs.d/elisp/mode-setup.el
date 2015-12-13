@@ -10,6 +10,7 @@
 (add-to-list 'auto-mode-alist '("\\.ls$" . racket-mode))
 (add-to-list 'auto-mode-alist '("\\.ttest$" . racket-mode))
 (add-to-list 'auto-mode-alist '("\\.k$" . k3-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
 ;; Set up ispell for OSX
 (if (eq system-type 'darwin)

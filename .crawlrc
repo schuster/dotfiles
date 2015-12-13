@@ -80,7 +80,7 @@ default_manual_training = true
 #
 # Rods are \ here.
 autopickup = $?!"/%
-autopickup_exceptions += <stones?, <.* darts?, <.* bolts?, <.* arrows?
+autopickup_exceptions += <.*darts?, <stones?, <.*bolts?, <.*arrows?
 
 # drop_filter += useless_item
 
