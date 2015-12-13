@@ -1,5 +1,0 @@
-#!/bin/sh
-
-BASEDIR=`dirname $0`
-diff $BASEDIR/dot-emacs ~/.emacs
-diff $BASEDIR/elisp ~/.emacs.d/elisp
