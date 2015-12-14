@@ -31,6 +31,7 @@
 
 ;; Key bindings
 (global-set-key "\C-x\C-m" 'execute-extended-command)
+(global-set-key "\C-xm" 'execute-extended-command)
 (global-set-key "\C-w" 'backward-kill-word)
 (global-set-key "\C-x\C-k" 'kill-region)
 (global-set-key "\M-{" 'paredit-wrap-square)
@@ -57,3 +58,7 @@
 
 ;; Default start directory (for some reason it's "/" by default on OS X)
 (setq default-directory "~/")
+
+;; TODO: move this elsewhere
+(require 'company-emoji)
+(add-to-list 'company-backends 'company-emoji)

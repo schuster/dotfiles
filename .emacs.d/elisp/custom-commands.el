@@ -18,3 +18,4 @@
 (defalias 'qrr 'query-replace-regexp)
 (defalias 'ms 'magit-status)
 (defalias 'at 'ansi-term)
+(defalias 'md 'markdown-mode)

@@ -9,3 +9,6 @@ auto/
 
 # Racket compiled files
 compiled/
+
+# Erlang compiled files
+*.beam

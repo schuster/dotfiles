@@ -22,6 +22,7 @@ alias pseg='ps -e | grep'
 alias nussh='ssh ccis'
 alias hssh='ssh atlantis'
 alias brssh='ssh blackrock'
+alias gssh='ssh galicia'
 alias r='racket'
 alias rt='raco test'
 
