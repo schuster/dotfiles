@@ -12,9 +12,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
 fi
 
 numlockx &
-  xmodmap ~/.xmodmap
-fi
-
+xmodmap ~/.xmodmap
 xscreensaver -no-splash&
 
 # disable the PC speaker
