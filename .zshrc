@@ -40,3 +40,5 @@ export PAGER=less
 export EDITOR=emacs
 export BROWSER=firefox
 
+# add local lib for Rust
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
