@@ -9,6 +9,13 @@
 [core]
 	excludesfile = /home/schu/.gitignore_global
 	editor = emacs
+[fetch]
+        # fskObjects recommended here: https://groups.google.com/forum/#!topic/binary-transparency/f-BI4o8HZW0
+        fsckObjects = true
 [push]
 	# Can remove this line once git 2.0 changes the default
 	default = simple
+[receive]
+        fsckObjects = true
+[transfer]
+        fsckObjects = true
