@@ -22,6 +22,15 @@
 ;; Custom indentations for racket-mode
 (put 'ls-test-case 'racket-indent-function 1)
 (put 'let-agent 'racket-indent-function 1)
+(put 'redex-let 'racket-indent-function 2)
+(put 'redex-let* 'racket-indent-function 2)
+(put 'test-equal? 'racket-indent-function 1)
+(put 'test-false 'racket-indent-function 1)
+(put 'test-graph-equal? 'racket-indent-function 1)
+(put 'test-true 'racket-indent-function 1)
+(put 'test-not-false 'racket-indent-function 1)
+(put 'eval-and-then 'racket-indent-function 2)
+(put 'eval-and-then* 'racket-indent-function 2)
 
 ;; Fix magit commit message editor, as seen here: http://stackoverflow.com/a/19265280/21957
 (if (equal 'darwin system-type)
