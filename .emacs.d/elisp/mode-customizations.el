@@ -29,6 +29,9 @@
 (put 'test-graph-equal? 'racket-indent-function 1)
 (put 'test-true 'racket-indent-function 1)
 (put 'test-not-false 'racket-indent-function 1)
+(put 'test-exn 'racket-indent-function 1)
+
+;; Custom indentations for my research
 (put 'eval-and-then 'racket-indent-function 2)
 (put 'eval-and-then* 'racket-indent-function 2)
 
@@ -54,7 +57,7 @@ This functions should be added to the hooks of major modes for programming."
 (add-hook 'prog-mode-hook 'font-lock-comment-annotations)
 (add-hook 'sgml-mode-hook 'font-lock-comment-annotations)
 (add-hook 'tex-mode-hook 'font-lock-comment-annotations)
-(add-hook 'latex-mode-hook 'font-lock-comment-annotations)
+;; AUCTeX capitalizes its hooks differently
 (add-hook 'TeX-mode-hook 'font-lock-comment-annotations)
 
 (add-hook 'text-mode-hook 'flyspell-mode)
