@@ -55,6 +55,7 @@ This functions should be added to the hooks of major modes for programming."
 (add-hook 'sgml-mode-hook 'font-lock-comment-annotations)
 (add-hook 'tex-mode-hook 'font-lock-comment-annotations)
 (add-hook 'latex-mode-hook 'font-lock-comment-annotations)
+(add-hook 'TeX-mode-hook 'font-lock-comment-annotations)
 
 (add-hook 'text-mode-hook 'flyspell-mode)
 
