@@ -10,10 +10,6 @@
 (add-hook 'markdown-mode-hook (lambda () (column-marker-1 80)))
 (add-hook 'markdown-mode-hook (lambda () (electric-indent-local-mode -1)))
 
-;; Tex line length
-(add-hook 'tex-mode-hook (lambda () (column-marker-1 75)))
-(add-hook 'tex-mode-hook (lambda () (setq fill-column 75)))
-
 ;; Paredit for all S-expression-based programming modes
 (add-hook 'emacs-lisp-mode-hook 'paredit-mode)
 (add-hook 'scheme-mode-hook 'paredit-mode)
