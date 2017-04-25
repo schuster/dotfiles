@@ -28,6 +28,7 @@
 
 ;; Indentation
 (setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
 
 ;; Key bindings
 (global-set-key "\C-x\C-m" 'execute-extended-command)
