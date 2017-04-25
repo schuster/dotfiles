@@ -28,7 +28,7 @@ alias rt='raco test'
 
 # Prompt
 PROMPT='%B[%m %1d]%#%b '
-PATH=~/bin:$PATH
+PATH=~/bin:~/.cargo/bin:$PATH
 
 # CLI colors (change directory to be bright blue)
 export LSCOLORS=Exfxcxdxbxegedabagacad
