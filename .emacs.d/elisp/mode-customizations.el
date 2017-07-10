@@ -52,8 +52,9 @@ This functions should be added to the hooks of major modes for programming."
 
 (add-hook 'prog-mode-hook 'font-lock-comment-annotations)
 (add-hook 'sgml-mode-hook 'font-lock-comment-annotations)
-(add-hook 'tex-mode-hook 'font-lock-comment-annotations)
-;; AUCTeX capitalizes its hooks differently
+;; AUCTeX capitalizes its hooks differently. Commenting out tex-mode-hook for
+;; now, because it seems to overlap with TeX-mode-hook in unexpected ways
+;; (add-hook 'tex-mode-hook 'font-lock-comment-annotations)
 (add-hook 'TeX-mode-hook 'font-lock-comment-annotations)
 
 (add-hook 'text-mode-hook 'flyspell-mode)
