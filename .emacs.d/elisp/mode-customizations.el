@@ -57,6 +57,12 @@ This functions should be added to the hooks of major modes for programming."
 ;; (add-hook 'tex-mode-hook 'font-lock-comment-annotations)
 (add-hook 'TeX-mode-hook 'font-lock-comment-annotations)
 
+;; For some reason AUCTeX seems to override my comment annotation highlights on
+;; save, so this hook re-enables them in that mode after every save
+(defun enable-annotations-in-latex-mode ()
+  (if (eq major-mode `latex-mode) (font-lock-comment-annotations)))
+(add-hook 'after-save-hook 'enable-annotations-in-latex-mode)
+
 (add-hook 'text-mode-hook 'flyspell-mode)
 
 ;; Magit customizations
