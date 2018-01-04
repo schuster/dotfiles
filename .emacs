@@ -28,7 +28,8 @@
 
 ;; Indentation
 (setq-default indent-tabs-mode nil)
-(setq-default tab-width 4)
+(setq-default tab-width 4) ; defines how to display an ASCII TAB character
+(setq-default c-basic-offset 4) ; defines (very roughly) how many spaces the TAB key inserts
 
 ;; Key bindings
 (global-set-key "\C-x\C-m" 'execute-extended-command)
