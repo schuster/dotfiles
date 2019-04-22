@@ -36,6 +36,7 @@
 (global-set-key "\C-xm" 'execute-extended-command)
 (global-set-key "\C-w" 'backward-kill-word)
 (global-set-key "\C-x\C-k" 'kill-region)
+(global-set-key "\C-xO" 'other-window-previous)
 (global-set-key "\M-{" 'paredit-wrap-square)
 
 ;; Mac key behaviors

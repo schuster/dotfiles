@@ -14,6 +14,10 @@
           (set-visited-file-name new-name)
           (set-buffer-modified-p nil))))))
 
+(defun other-window-previous (count)
+  (interactive "p")
+  (other-window (- count)))
+
 ;; Command aliases
 (defalias 'qrr 'query-replace-regexp)
 (defalias 'ms 'magit-status)
