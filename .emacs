@@ -42,9 +42,8 @@
 (customize-set-variable 'mac-command-modifier 'meta)
 
 ;; Color theme
-(set-frame-parameter nil 'background-mode 'dark)
 (when window-system
-  (load-theme 'solarized t)) ; don't prompt to ask if theme is "safe"
+  (load-theme 'solarized-dark t)) ; don't prompt to ask if theme is "safe"
 
 ;; Scripts for custom commands, modes, etc.
 (load-library "markdown-mode")
