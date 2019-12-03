@@ -4,7 +4,6 @@
 (add-to-list 'load-path "~/.emacs.d/elisp")
 
 ;; Package setup
-(require 'package)
 (package-initialize) ; load all packages so they are available in this file
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
@@ -27,8 +26,8 @@
 (add-hook 'term-mode-hook (lambda () (setq show-trailing-whitespace nil)))
 
 ;; Indentation
-(setq-default indent-tabs-mode nil)
-(setq-default tab-width 4) ; defines how to display an ASCII TAB character
+(customize-set-variable 'indent-tabs-mode nil)
+(customize-set-variable 'tab-width 4) ; defines how to display an ASCII TAB character
 (setq-default c-basic-offset 4) ; defines (very roughly) how many spaces the TAB key inserts
 
 ;; Key bindings
@@ -40,7 +39,7 @@
 (global-set-key "\M-{" 'paredit-wrap-square)
 
 ;; Mac key behaviors
-(setq mac-command-modifier 'meta)
+(customize-set-variable 'mac-command-modifier 'meta)
 
 ;; Color theme
 (set-frame-parameter nil 'background-mode 'dark)
