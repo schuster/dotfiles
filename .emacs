@@ -60,9 +60,6 @@
 ;; Default start directory (for some reason it's "/" by default on OS X)
 (setq default-directory "~/")
 
-;; TODO: move this elsewhere
-(require 'company-emoji)
-(add-to-list 'company-backends 'company-emoji)
 (put 'upcase-region 'disabled nil)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
