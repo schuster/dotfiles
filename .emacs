@@ -4,31 +4,30 @@
 (add-to-list 'load-path "~/.emacs.d/elisp")
 
 ;; Package setup
-(require 'package)
 (package-initialize) ; load all packages so they are available in this file
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 ;; Sensible defaults
-(setq inhibit-startup-message t)
-(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
-(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
-(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
-(setq visible-bell t)
-(setq require-final-newline 'ask)
-(setq make-backup-files nil)
-(setq-default fill-column 80)
-(column-number-mode 1)
-(global-linum-mode 1)
+(customize-set-variable 'inhibit-startup-message t)
+(customize-set-variable 'scroll-bar-mode nil)
+(customize-set-variable 'tool-bar-mode nil)
+(customize-set-variable 'menu-bar-mode nil)
+(customize-set-variable 'visible-bell t)
+(customize-set-variable 'require-final-newline 'ask)
+(customize-set-variable 'make-backup-files nil)
+(customize-set-variable 'fill-column 80)
+(customize-set-variable 'column-number-mode t)
+(customize-set-variable 'global-linum-mode t)
 
 ;; Personal preferences
-(setq-default show-trailing-whitespace t)
+(customize-set-variable 'show-trailing-whitespace t)
 ;; term-mode-hook
 (add-hook 'term-mode-hook (lambda () (setq show-trailing-whitespace nil)))
 
 ;; Indentation
-(setq-default indent-tabs-mode nil)
-(setq-default tab-width 4) ; defines how to display an ASCII TAB character
+(customize-set-variable 'indent-tabs-mode nil)
+(customize-set-variable 'tab-width 4) ; defines how to display an ASCII TAB character
 (setq-default c-basic-offset 4) ; defines (very roughly) how many spaces the TAB key inserts
 
 ;; Key bindings
@@ -40,7 +39,7 @@
 (global-set-key "\M-{" 'paredit-wrap-square)
 
 ;; Mac key behaviors
-(setq mac-command-modifier 'meta)
+(customize-set-variable 'mac-command-modifier 'meta)
 
 ;; Color theme
 ;;
@@ -69,9 +68,6 @@
 ;; Default start directory (for some reason it's "/" by default on OS X)
 (setq default-directory "~/")
 
-;; TODO: move this elsewhere
-(require 'company-emoji)
-(add-to-list 'company-backends 'company-emoji)
 (put 'upcase-region 'disabled nil)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
