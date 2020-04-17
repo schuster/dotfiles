@@ -43,9 +43,16 @@
 (setq mac-command-modifier 'meta)
 
 ;; Color theme
+;;
+;; I use the Solarized version from
+;; https://github.com/sellout/emacs-color-theme-solarized rather than the one in
+;; MELPA because (a) this one is mentioned on the official Solarized site, and
+;; (b) it has support for terminal-mode emacs. Note that terminal mode requires
+;; setting the terminal's color theme to Solarized as well.
+(add-to-list 'custom-theme-load-path "~/.emacs.d/elisp/themes/emacs-color-theme-solarized")
 (set-frame-parameter nil 'background-mode 'dark)
-(when window-system
-  (load-theme 'solarized t)) ; don't prompt to ask if theme is "safe"
+(set-terminal-parameter nil 'background-mode 'dark)
+(load-theme 'solarized t) ; don't prompt to ask if theme is "safe"
 
 ;; Scripts for custom commands, modes, etc.
 (load-library "markdown-mode")
@@ -73,7 +80,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (tuareg zenburn-theme scala-mode2 rust-mode racket-mode paredit markdown-mode magit erlang company-emoji column-marker color-theme-solarized auctex))))
+    (tuareg zenburn-theme scala-mode2 rust-mode racket-mode paredit markdown-mode magit erlang company-emoji column-marker auctex))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
