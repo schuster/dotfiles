@@ -6,7 +6,7 @@
 ;; Package setup
 (package-initialize) ; load all packages so they are available in this file
 (add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+             '("melpa" . "https://melpa.org/packages/") t)
 
 ;; Sensible defaults
 (customize-set-variable 'inhibit-startup-message t)
