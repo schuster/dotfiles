@@ -16,7 +16,12 @@
 (add-hook 'racket-mode-hook 'paredit-mode)
 
 ;; Indentation for Fundamentals 2 at Northeastern
-(add-hook 'java-mode-hook (lambda () (setq tab-width 2) (setq c-basic-offset 2)))
+(add-hook 'java-mode-hook
+          (lambda ()
+            (setq tab-width 2)
+            (setq c-basic-offset 2)
+            (setq show-trailing-whitespace nil)
+            (column-marker-1 100)))
 
 ;; Custom indentations for racket-mode
 (put 'ls-test-case 'racket-indent-function 1)
