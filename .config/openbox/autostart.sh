@@ -17,6 +17,7 @@
 #xfce-mcs-manager &
 
 # set the wallpaper
+# NOTE: this seems to be duplicated in both autostart and ~/.fehbg. I should remove that duplication.
 feh --bg-fill --no-fehbg ~/images/backgrounds/DrumsofND.jpg
 
 # D-bus
