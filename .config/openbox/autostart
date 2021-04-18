@@ -1,7 +1,7 @@
 # Startup script that runs when Openbox starts
 
 # Set the wallpaper
-feh --bg-center --no-fehbg ~/images/backgrounds/rands_2560_1600.png
+feh --bg-fil --no-fehbg ~/images/backgrounds/DrumsofND.jpg
 
 # Run the XDG autostart scripts; specifically the ones in ~/.config/autostart
 #/usr/lib/openbox/openbox-xdg-autostart
