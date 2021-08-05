@@ -1,8 +1,8 @@
 opam-version: "2.0"
 repositories: "default"
-installed-switches: "system"
-switch: "system"
-jobs: 4
+installed-switches: "default"
+switch: "default"
+jobs: 3
 download-jobs: 3
 eval-variables: [
   sys-ocaml-version
