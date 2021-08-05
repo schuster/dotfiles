@@ -76,7 +76,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (tuareg zenburn-theme scala-mode2 rust-mode racket-mode paredit markdown-mode magit erlang company-emoji column-marker auctex))))
+    (solarized-theme tuareg zenburn-theme scala-mode2 rust-mode racket-mode paredit markdown-mode magit erlang company-emoji column-marker color-theme-solarized auctex))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
