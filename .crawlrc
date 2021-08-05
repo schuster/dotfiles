@@ -79,7 +79,7 @@ default_manual_training = true
 ##### 4-a       Picking up and Dropping ###############
 #
 # Rods are \ here.
-autopickup = $?!"/%
+autopickup = $?!"/
 autopickup_exceptions += <.*darts?, <stones?, <.*bolts?, <.*arrows?
 
 # drop_filter += useless_item
