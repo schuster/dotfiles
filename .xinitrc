@@ -12,7 +12,6 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
 fi
 
 numlockx &
-setxkbmap -option ctrl:swapcaps
 xscreensaver -no-splash&
 
 # disable the PC speaker
