@@ -21,3 +21,5 @@
         fsckObjects = true
 [init]
 	defaultBranch = main
+[safe]
+	directory = /etc
