@@ -19,3 +19,5 @@
         fsckObjects = true
 [transfer]
         fsckObjects = true
+[init]
+	defaultBranch = main
