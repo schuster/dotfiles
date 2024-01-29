@@ -4,6 +4,8 @@
 
 # Explicitly list the hidden directories I don't want to track
 /.Braid
+/.CFUserTextEncoding
+/.DS_Store
 /.ICEauthority
 /.Skype/
 /.SupergiantGames/
@@ -22,6 +24,7 @@
 /.bash_history
 /.bash_logout
 /.bash_profile
+/.bash_sessions
 /.bashrc
 /.bip/
 /.cabal/
@@ -104,6 +107,7 @@
 /.config/transmission/
 /.config/unity3d/
 /.config/vlc/
+/.config/wireshark
 /.config/xfce4/
 /.config/xmms2/
 /.config/yelp/
@@ -183,6 +187,7 @@
 /.nvidia-settings-rc
 /.opam/archives/
 /.opam/config.lock
+/.opam/default/
 /.opam/download-cache/
 /.opam/lock
 /.opam/log/
@@ -236,6 +241,9 @@
 /.xscreensaver
 /.xsession
 /.xsession-errors
+/.zcompcache
 /.zcompdump
 /.zotero/
 /.zsnes/
+/.zsh_history
+/.zsh_sessions/
