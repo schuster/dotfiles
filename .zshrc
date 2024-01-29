@@ -29,7 +29,7 @@ alias rt='raco test'
 
 # Prompt
 PROMPT='%B[%m %1d]%#%b '
-PATH=~/bin:~/.cargo/bin:$PATH
+PATH=~/bin:~/.cargo/bin:/Applications/Racket/bin:$PATH
 
 # CLI colors (change directory to be bright blue)
 export CLICOLOR=true
