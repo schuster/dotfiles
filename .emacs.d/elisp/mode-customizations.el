@@ -1,3 +1,8 @@
+;; Racket is not on the emacs path for MacOS by default (see
+;; https://www.racket-mode.com/#Configure)
+(if (equal 'darwin system-type)
+    (setq racket-program "/Applications/Racket/bin/racket"))
+
 ;; Conventional max line length in Racket is 102 columns
 (add-hook 'racket-mode-hook (lambda () (column-marker-1 102)))
 (add-hook 'racket-mode-hook (lambda () (setq fill-column 102)))
