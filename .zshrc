@@ -49,5 +49,5 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 # see https://wiki.archlinux.org/index.php/font_configuration#Subpixel_rendering
 export FT2_SUBPIXEL_HINTING=0 # Disabled
 
-# OPAM configuration, added by "opam init"
-source /home/schu/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+# OPAM configuration
+source ~/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
