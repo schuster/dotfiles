@@ -4,15 +4,12 @@
     (setq racket-program "/Applications/Racket/bin/racket"))
 
 ;; Conventional max line length in Racket is 102 columns
-(add-hook 'racket-mode-hook (lambda () (column-marker-1 102)))
 (add-hook 'racket-mode-hook (lambda () (setq fill-column 102)))
 
 ;; Conventional max line length in Rust is 102 columns
-(add-hook 'rust-mode-hook (lambda () (column-marker-1 99)))
 (add-hook 'rust-mode-hook (lambda () (setq fill-column 99)))
 
-;; Show a column marker in markdown mode and disable electric indent
-(add-hook 'markdown-mode-hook (lambda () (column-marker-1 80)))
+;; Disable electric indent in markdown mode
 (add-hook 'markdown-mode-hook (lambda () (electric-indent-local-mode -1)))
 
 ;; Paredit for all S-expression-based programming modes
@@ -25,8 +22,7 @@
           (lambda ()
             (setq tab-width 2)
             (setq c-basic-offset 2)
-            (setq show-trailing-whitespace nil)
-            (column-marker-1 100)))
+            (setq show-trailing-whitespace nil)))
 
 ;; Custom indentations for racket-mode
 (put 'ls-test-case 'racket-indent-function 1)
