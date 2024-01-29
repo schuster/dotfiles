@@ -32,6 +32,7 @@ PROMPT='%B[%m %1d]%#%b '
 PATH=~/bin:~/.cargo/bin:$PATH
 
 # CLI colors (change directory to be bright blue)
+export CLICOLOR=true
 export LSCOLORS=Exfxcxdxbxegedabagacad
 
 # for now, add my built racket's bin directory to the path
