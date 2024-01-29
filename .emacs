@@ -54,7 +54,6 @@
 (load-theme 'solarized t) ; don't prompt to ask if theme is "safe"
 
 ;; Scripts for custom commands, modes, etc.
-(load-library "markdown-mode")
 (load-library "custom-commands")
 (load-library "mode-setup")
 (load-library "mode-customizations")
