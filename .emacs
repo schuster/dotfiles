@@ -24,6 +24,8 @@
 (customize-set-variable 'show-trailing-whitespace t)
 ;; term-mode-hook
 (add-hook 'term-mode-hook (lambda () (setq show-trailing-whitespace nil)))
+;; Show the right edge of the column in programming modes
+(add-hook 'prog-mode-hook #'display-fill-column-indicator-mode)
 
 ;; Indentation
 (customize-set-variable 'indent-tabs-mode nil)
