@@ -1,7 +1,7 @@
 opam-version: "2.0"
 opam-root-version: "2.1"
 repositories: "default"
-installed-switches: "default"
+installed-switches: ["/home/schu/projects/ben_compiler/src" "default"]
 switch: "default"
 jobs: 3
 download-jobs: 3
@@ -13,6 +13,9 @@ eval-variables: [
 default-compiler: [
   "ocaml-system" {>= "4.02.3"}
   "ocaml-base-compiler"
+]
+default-invariant: [
+  "ocaml" {>= "4.05.0"}
 ]
 depext: true
 depext-run-installs: true

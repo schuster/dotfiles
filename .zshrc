@@ -50,4 +50,4 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 export FT2_SUBPIXEL_HINTING=0 # Disabled
 
 # OPAM configuration
-source ~/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+[[ ! -r /home/schu/.opam/opam-init/init.zsh ]] || source /home/schu/.opam/opam-init/init.zsh > /dev/null 2> /dev/null
