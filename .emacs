@@ -26,6 +26,8 @@
 (add-hook 'term-mode-hook (lambda () (setq show-trailing-whitespace nil)))
 ;; Show the right edge of the column in programming modes
 (add-hook 'prog-mode-hook #'display-fill-column-indicator-mode)
+;; Show "current match/total matches" during incremental search
+(global-anzu-mode +1)
 
 ;; Indentation
 (customize-set-variable 'indent-tabs-mode nil)
@@ -76,8 +78,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   (quote
-    (solarized-theme tuareg zenburn-theme scala-mode2 rust-mode racket-mode paredit markdown-mode magit erlang company-emoji column-marker color-theme-solarized auctex))))
+   '(anzu solarized-theme tuareg zenburn-theme scala-mode2 rust-mode racket-mode paredit markdown-mode magit erlang company-emoji column-marker color-theme-solarized auctex)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
