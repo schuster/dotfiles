@@ -71,6 +71,11 @@
 ;; Default start directory (for some reason it's "/" by default on OS X)
 (setq default-directory "~/")
 
+;; Get SSH agent information via Keychain (needed on Mac; see
+;; https://www.emacswiki.org/emacs/SshWithEmacs#h5o-2
+(require 'keychain-environment)
+(keychain-refresh-environment)
+
 (put 'upcase-region 'disabled nil)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
