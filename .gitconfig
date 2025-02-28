@@ -1,6 +1,8 @@
 [user]
 	name = Jonathan Schuster
-	email = jonathan.p.schuster@gmail.com
+    # Google requires me to use my Google address for commits. See go/patching.
+	# email = jonathan.p.schuster@gmail.com
+    email = jschust@google.com
 [alias]
 	st = status -s
 	co = checkout
