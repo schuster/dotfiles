@@ -1,2 +1,2 @@
-eval `keychain -q --agents ssh --eval`
+eval `keychain -q --eval`
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
