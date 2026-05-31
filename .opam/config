@@ -1,14 +1,55 @@
 opam-version: "2.0"
-opam-root-version: "2.1"
+opam-root-version: "2.2"
 repositories: "default"
-installed-switches: ["/home/schu/projects/ben_compiler/src" "default"]
+installed-switches: [
+  "default"
+  "/Users/schu/projects/software_foundations"
+  "/Users/schu/projects/ben_compiler/src"
+]
 switch: "default"
-jobs: 3
 download-jobs: 3
 eval-variables: [
-  sys-ocaml-version
-  ["ocamlc" "-vnum"]
-  "OCaml version present on your system independently of opam, if any"
+  [
+    sys-ocaml-system
+    [
+      "sh"
+      "-c"
+      "ocamlc -config 2>/dev/null | tr -d '\\r' | sed -n -e 's/system: //p'"
+    ]
+    "Target system of the OCaml compiler present on your system"
+  ]
+  [
+    sys-ocaml-libc
+    [
+      "sh"
+      "-c"
+      "ocamlc -config 2>/dev/null | tr -d '\\r' | sed -n -e 's/^os_type: Win32/msvc/p;s/^os_type: .*/libc/p'"
+    ]
+    "Host C Runtime Library type of the OCaml compiler present on your system"
+  ]
+  [
+    sys-ocaml-cc
+    [
+      "sh"
+      "-c"
+      "ocamlc -config 2>/dev/null | tr -d '\\r' | sed -n -e 's/^ccomp_type: //p'"
+    ]
+    "Host C Compiler type of the OCaml compiler present on your system"
+  ]
+  [
+    sys-ocaml-arch
+    [
+      "sh"
+      "-c"
+      "ocamlc -config 2>/dev/null | tr -d '\\r' | sed -n -e 's/i386/i686/;s/amd64/x86_64/;s/^architecture: //p'"
+    ]
+    "Target architecture of the OCaml compiler present on your system"
+  ]
+  [
+    sys-ocaml-version
+    ["ocamlc" "-vnum"]
+    "OCaml version present on your system independently of opam, if any"
+  ]
 ]
 default-compiler: [
   "ocaml-system" {>= "4.02.3"}
@@ -20,6 +61,7 @@ default-invariant: [
 depext: true
 depext-run-installs: true
 depext-cannot-install: false
+swh-fallback: false
 wrap-build-commands:
   ["%{hooks}%/sandbox.sh" "build"] {os = "linux" | os = "macos"}
 wrap-install-commands:
